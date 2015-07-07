@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Html5 Form Validations</title>
+</head>
+<body>
+
+	<form action="" method="post">
+		<fieldset>
+			<legend>Booking Details</legend>
+			<div>
+				<label for="name">Name:</label> <input id="name" name="name"
+					value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+">
+				<span id="name-format" class="help">Format: firstname
+					lastname</span>
+			</div>
+			<div>
+				<label for="email">Email:</label> <input type="email" id="email"
+					name="email" value="" required>
+			</div>
+			<div>
+				<label for="website">Website:</label> <input type="url" id="website"
+					name="website" value="">
+			</div>
+			<div>
+				<label for="numTickets"><abbr title="Number">No.</abbr> of
+					Tickets:</label> <input type="number" id="numTickets" name="numTickets"
+					value="" required min="1" max="4">
+			</div>
+			<div class="submit">
+				<input type="submit" value="Submit">
+			</div>
+		</fieldset>
+	</form>
+
+</body>
+</html>
